@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>SerbMR by vukbatanovic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">SerbMR</h1>
+      <h2 class="project-tagline">The Serbian Movie Review Dataset</h2>
+      <a href="https://github.com/vukbatanovic/SerbMR" class="btn">View on GitHub</a>
+      <a href="https://github.com/vukbatanovic/SerbMR/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/vukbatanovic/SerbMR/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="serbmr---the-serbian-movie-review-dataset" class="anchor" href="#serbmr---the-serbian-movie-review-dataset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SerbMR - The Serbian Movie Review Dataset</h1>
+
+<p>The Serbian Movie Review Dataset collection consists of three movie review datasets in Serbian which were constructed for the task of sentiment analysis:</p>
+
+<ul>
+<li><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip">Collected movie reviews in Serbian</a></li>
+<li><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff">SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)</a></li>
+<li><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff">SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)</a></li>
+</ul>
+
+<h2>
+<a id="collected-movie-reviews-in-serbian" class="anchor" href="#collected-movie-reviews-in-serbian" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Collected movie reviews in Serbian</h2>
+
+<p>This is a collection of 4725 movie reviews in Serbian.</p>
+
+<h3>
+<a id="data-sources" class="anchor" href="#data-sources" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data sources</h3>
+
+<p>Reviews were gathered from the following eight websites:</p>
+
+<ul>
+<li>2kokice.com</li>
+<li>filmskerecenzije.com</li>
+<li>filmskihitovi.blogspot.com</li>
+<li>happynovisad.com</li>
+<li>kakavfilm.com</li>
+<li>mislitemojomglavom.blogspot.com</li>
+<li>popboks.com</li>
+<li>yc.rs</li>
+</ul>
+
+<p>This corpus contains the reviews published on these websites from their inception until 01/01/2015.
+Some of the reviews are written in Cyrillic, but most of them are in the Latin script.
+A great majority of the reviews are in the Ekavian pronunciation.</p>
+
+<h3>
+<a id="scoring-systems" class="anchor" href="#scoring-systems" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Scoring systems</h3>
+
+<p>A 1-10 scoring system was adopted as the standard, since most websites use it.
+A 1-5 scoring system, used on happynovisad.com and yc.rs, was translated to 1-10 by multiplying the original scores by two.
+For these websites a plus/minus next to the original score was treated as an increment/decrement of the translated score.
+Pluses/minuses in the 1-10 scoring systems were ignored and X.5 scores were rounded down to X.
+In a few rare instances where a zero score was given, it was translated into a score of one.</p>
+
+<h3>
+<a id="score-distribution" class="anchor" href="#score-distribution" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Score distribution</h3>
+
+<p>This dataset is skewed towards the positive reviews - if scores 1-4 are treated as negative, 5-6 as neutral, and 7-10 as positive, the corpus contains 841 negative, 1278 neutral, and 2606 positive reviews.</p>
+
+<h3>
+<a id="subsets" class="anchor" href="#subsets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Subsets</h3>
+
+<p>The SerbMR-2C/SerbMR-3C datasets are two-class/three-class balanced subsets of this collection.</p>
+
+<h3>
+<a id="format" class="anchor" href="#format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format</h3>
+
+<p>The reviews are presented as individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
+File names are mostly given according to movie titles (and sometimes the release year).
+However, for three of the source websites (happynovisad.com, kakavfilm.com, popboks.com) a different naming scheme was used, based on a unique ID number for each movie review.</p>
+
+<h2>
+<a id="serbmr-2c" class="anchor" href="#serbmr-2c" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SerbMR-2C</h2>
+
+<p>This two-class balanced sentiment analysis dataset contains 1682 movie reviews in Serbian (841 positive and 841 negative reviews).
+A great majority of the reviews are in the Ekavian pronunciation.</p>
+
+<h3>
+<a id="relation-to-other-datasets" class="anchor" href="#relation-to-other-datasets" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Relation to other datasets</h3>
+
+<p>SerbMR-2C is a subset of the imbalanced "Collected Movie Reviews in Serbian" dataset and was constructed by including all 841 negative reviews from it and choosing 841 positive reviews in the manner described in the reference paper.
+The balancing procedure minimizes the non-sentiment-related differences between the classes and takes into account review scores, review lengths and the differences in writing styles used on different source websites.</p>
+
+<p>SerbMR-2C is also a subset of the SerbMR-3C dataset as it contains the positive/negative reviews from that dataset, but not the neutral ones.</p>
+
+<h3>
+<a id="format-1" class="anchor" href="#format-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format</h3>
+
+<p>The dataset is formatted as a Weka .arff file, with one review per line.
+All Cyrillic reviews were converted into the Latin script.</p>
+
+<h2>
+<a id="serbmr-3c" class="anchor" href="#serbmr-3c" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SerbMR-3C</h2>
+
+<p>This three-class balanced sentiment analysis dataset contains 2523 movie reviews in Serbian (841 positive, 841 neutral, and 841 negative reviews).
+A great majority of the reviews are in the Ekavian pronunciation.</p>
+
+<h3>
+<a id="relation-to-other-datasets-1" class="anchor" href="#relation-to-other-datasets-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Relation to other datasets</h3>
+
+<p>SerbMR-3C is a subset of the imbalanced "Collected Movie Reviews in Serbian" dataset and was constructed by including all 841 negative reviews from it and choosing 841 positive and 841 neutral reviews in the manner described in the reference paper.
+The balancing procedure minimizes the non-sentiment-related differences between the classes and takes into account review scores, review lengths and the differences in writing styles used on different source websites.</p>
+
+<p>SerbMR-3C is also a superset of the SerbMR-2C dataset as it contains all of the positive/negative reviews from that dataset, as well as the additional 841 neutral reviews.</p>
+
+<h3>
+<a id="format-2" class="anchor" href="#format-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format</h3>
+
+<p>The dataset is formatted as a Weka .arff file, with one review per line.
+All Cyrillic reviews were converted into the Latin script.</p>
+
+<h2>
+<a id="reference" class="anchor" href="#reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reference</h2>
+
+<p>If you wish to use these datasets in your paper or project, please cite:</p>
+
+<p><strong>Reliable Baselines for Sentiment Analysis in Resource-Limited Languages: The Serbian Movie Review Dataset</strong>, Vuk Batanović, Boško Nikolić, Milan Milosavljević, in Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016), Portorož, Slovenia (2016).</p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)</a></p>
+
+<p>If you wish to use these datasets in a commercial product, please contact me at: bv115045p / at / student.etf.bg.ac.rs</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/vukbatanovic/SerbMR">SerbMR</a> is maintained by <a href="https://github.com/vukbatanovic">vukbatanovic</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
