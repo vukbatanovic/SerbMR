@@ -1,8 +1,8 @@
 ﻿# SerbMR - The Serbian Movie Review Dataset
 The Serbian Movie Review Dataset collection consists of three movie review datasets in Serbian which were constructed for the task of sentiment analysis:
-* [Collected movie reviews in Serbian](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip)
-* [SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff)
-* [SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff)
+* [Collected movie reviews in Serbian](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip) (ISLRN [252-457-966-231-5](http://islrn.org/resources/252-457-966-231-5/))
+* [SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff) (ISLRN [016-049-192-514-1] (http://islrn.org/resources/016-049-192-514-1/))
+* [SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff) (ISLRN [229-533-271-984-0](http://islrn.org/resources/229-533-271-984-0/))
 
 
 ## Collected movie reviews in Serbian
