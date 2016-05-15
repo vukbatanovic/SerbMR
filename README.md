@@ -75,7 +75,7 @@ All Cyrillic reviews were converted into the Latin script.
 ## Reference
 If you wish to use these datasets in your paper or project, please cite:
 
-**Reliable Baselines for Sentiment Analysis in Resource-Limited Languages: The Serbian Movie Review Dataset**, Vuk Batanović, Boško Nikolić, Milan Milosavljević, in Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016), Portorož, Slovenia (2016).
+**[Reliable Baselines for Sentiment Analysis in Resource-Limited Languages: The Serbian Movie Review Dataset](http://www.lrec-conf.org/proceedings/lrec2016/pdf/284_Paper.pdf)**, Vuk Batanović, Boško Nikolić, Milan Milosavljević, in Proceedings of the 10th International Conference on Language Resources and Evaluation (LREC 2016), pp. 2688-2696, Portorož, Slovenia (2016).
 
 ## License
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
