@@ -13,8 +13,9 @@
     <section class="page-header">
       <h1 class="project-name">SerbMR</h1>
       <h2 class="project-tagline">The Serbian Movie Review Dataset</h2>
-      <h2 class="project-tagline"><i><b>Skup filmskih recenzija za analizu sentimenta tekstova na srpskom</b></i></h2>
       <a href="https://github.com/vukbatanovic/SerbMR" class="btn">View on GitHub</a>
+      <a href="https://github.com/vukbatanovic/SerbMR/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/vukbatanovic/SerbMR/tarball/master" class="btn">Download .tar.gz</a>
     </section>
 
     <section class="main-content">
@@ -24,9 +25,28 @@
 <p>The Serbian Movie Review Dataset collection consists of three movie review datasets in Serbian which were constructed for the task of sentiment analysis:</p>
 
 <ul>
-<li><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip">Collected movie reviews in Serbian</a> (ISLRN <a href="http://islrn.org/resources/252-457-966-231-5/">252-457-966-231-5</a>)</li>
-<li><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff">SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)</a> (ISLRN <a href="http://islrn.org/resources/016-049-192-514-1/">016-049-192-514-1</a>)</li>
-<li><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff">SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)</a> (ISLRN <a href="http://islrn.org/resources/229-533-271-984-0/">229-533-271-984-0</a>)</li>
+<li>
+<strong><a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip">Collected movie reviews in Serbian</a></strong> (ISLRN <a href="http://islrn.org/resources/252-457-966-231-5/">252-457-966-231-5</a>)</li>
+<li>
+<strong>SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)</strong> (ISLRN <a href="http://islrn.org/resources/016-049-192-514-1/">016-049-192-514-1</a>)
+
+<ul>
+<li>
+<a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff">Weka's ARFF format</a> (Attribute-relation file format)</li>
+<li>
+<a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.csv">CSV format</a> (Comma-separated values)</li>
+</ul>
+</li>
+<li>
+<strong>SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)</strong> (ISLRN <a href="http://islrn.org/resources/229-533-271-984-0/">229-533-271-984-0</a>)
+
+<ul>
+<li>
+<a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff">Weka's ARFF format</a> (Attribute-relation file format)</li>
+<li>
+<a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.csv">CSV format</a> (Comma-separated values)</li>
+</ul>
+</li>
 </ul>
 
 <h2>
@@ -76,7 +96,7 @@ In a few rare instances where a zero score was given, it was translated into a s
 <h3>
 <a id="format" class="anchor" href="#format" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format</h3>
 
-<p>The reviews are presented as individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
+<p>The reviews are presented as a <a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip">ZIP file</a> containing individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
 File names are mostly given according to movie titles (and sometimes the release year).
 However, for three of the source websites (happynovisad.com, kakavfilm.com, popboks.com) a different naming scheme was used, based on a unique ID number for each movie review.</p>
 
@@ -97,8 +117,8 @@ The balancing procedure minimizes the non-sentiment-related differences between 
 <h3>
 <a id="format-1" class="anchor" href="#format-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format</h3>
 
-<p>The dataset is formatted as a Weka .arff file, with one review per line.
-All Cyrillic reviews were converted into the Latin script.</p>
+<p>All Cyrillic reviews were converted into the Latin script.
+The dataset is downloadable as a <a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff">Weka .arff file</a> or as a <a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.csv">.csv file</a>. In both cases UTF-8 encoding is used and one review appears per line.</p>
 
 <h2>
 <a id="serbmr-3c" class="anchor" href="#serbmr-3c" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SerbMR-3C</h2>
@@ -117,8 +137,8 @@ The balancing procedure minimizes the non-sentiment-related differences between 
 <h3>
 <a id="format-2" class="anchor" href="#format-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Format</h3>
 
-<p>The dataset is formatted as a Weka .arff file, with one review per line.
-All Cyrillic reviews were converted into the Latin script.</p>
+<p>All Cyrillic reviews were converted into the Latin script.
+The dataset is downloadable as a <a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff">Weka .arff file</a> or as a <a href="https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.csv">.csv file</a>. In both cases UTF-8 encoding is used and one review appears per line.</p>
 
 <h2>
 <a id="reference" class="anchor" href="#reference" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reference</h2>
