@@ -41,7 +41,7 @@ This dataset is skewed towards the positive reviews - if scores 1-4 are treated 
 The SerbMR-2C/SerbMR-3C datasets are two-class/three-class balanced subsets of this collection.
 
 ### Format
-The reviews are presented as a ZIP file containing individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
+The reviews are presented as a [ZIP file](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip) containing individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
 File names are mostly given according to movie titles (and sometimes the release year).
 However, for three of the source websites (happynovisad.com, kakavfilm.com, popboks.com) a different naming scheme was used, based on a unique ID number for each movie review.
 
