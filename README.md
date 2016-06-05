@@ -1,8 +1,12 @@
 ﻿# SerbMR - The Serbian Movie Review Dataset
 The Serbian Movie Review Dataset collection consists of three movie review datasets in Serbian which were constructed for the task of sentiment analysis:
-* [Collected movie reviews in Serbian](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip) (ISLRN [252-457-966-231-5](http://islrn.org/resources/252-457-966-231-5/))
-* [SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff) (ISLRN [016-049-192-514-1] (http://islrn.org/resources/016-049-192-514-1/))
-* [SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff) (ISLRN [229-533-271-984-0](http://islrn.org/resources/229-533-271-984-0/))
+* **[Collected movie reviews in Serbian](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip)** (ISLRN [252-457-966-231-5](http://islrn.org/resources/252-457-966-231-5/))
+* **SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)** (ISLRN [016-049-192-514-1] (http://islrn.org/resources/016-049-192-514-1/))
+  * [Weka's ARFF format](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff) (Attribute-relation file format)
+  * [CSV format](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.csv) (Comma-separated values)
+* **SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)** (ISLRN [229-533-271-984-0](http://islrn.org/resources/229-533-271-984-0/))
+  * [Weka's ARFF format](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff) (Attribute-relation file format)
+  * [CSV format](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.csv) (Comma-separated values)
 
 
 ## Collected movie reviews in Serbian
@@ -37,7 +41,7 @@ This dataset is skewed towards the positive reviews - if scores 1-4 are treated 
 The SerbMR-2C/SerbMR-3C datasets are two-class/three-class balanced subsets of this collection.
 
 ### Format
-The reviews are presented as individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
+The reviews are presented as a ZIP file containing individual UTF-8-encoded TXT files sorted into folders according to their source website and their score.
 File names are mostly given according to movie titles (and sometimes the release year).
 However, for three of the source websites (happynovisad.com, kakavfilm.com, popboks.com) a different naming scheme was used, based on a unique ID number for each movie review.
 
@@ -53,8 +57,8 @@ The balancing procedure minimizes the non-sentiment-related differences between 
 SerbMR-2C is also a subset of the SerbMR-3C dataset as it contains the positive/negative reviews from that dataset, but not the neutral ones.
 
 ### Format
-The dataset is formatted as a Weka .arff file, with one review per line.
 All Cyrillic reviews were converted into the Latin script.
+The dataset is downloadable as a [Weka .arff file](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff) or as a [.csv file](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.csv). In both cases UTF-8 encoding is used and one review appears per line.
 
 
 ## SerbMR-3C
@@ -68,8 +72,8 @@ The balancing procedure minimizes the non-sentiment-related differences between 
 SerbMR-3C is also a superset of the SerbMR-2C dataset as it contains all of the positive/negative reviews from that dataset, as well as the additional 841 neutral reviews.
 
 ### Format
-The dataset is formatted as a Weka .arff file, with one review per line.
 All Cyrillic reviews were converted into the Latin script.
+The dataset is downloadable as a [Weka .arff file](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.arff) or as a [.csv file](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-3C.csv). In both cases UTF-8 encoding is used and one review appears per line.
 
 
 ## Reference
