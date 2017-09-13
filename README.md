@@ -1,7 +1,7 @@
 ﻿# SerbMR - The Serbian Movie Review Dataset
 The Serbian Movie Review Dataset collection consists of three movie review datasets in Serbian which were constructed for the task of sentiment analysis:
 * **[Collected movie reviews in Serbian](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/Collected_movie_reviews_in_Serbian.zip)** (ISLRN [252-457-966-231-5](http://islrn.org/resources/252-457-966-231-5/))
-* **SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)** (ISLRN [016-049-192-514-1] (http://islrn.org/resources/016-049-192-514-1/))
+* **SerbMR-2C - The Serbian Movie Review Dataset (2 Classes)** (ISLRN [016-049-192-514-1](http://islrn.org/resources/016-049-192-514-1/))
   * [Weka's ARFF format](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.arff) (Attribute-relation file format)
   * [CSV format](https://github.com/vukbatanovic/SerbMR/releases/download/v1.0/SerbMR-2C.csv) (Comma-separated values)
 * **SerbMR-3C - The Serbian Movie Review Dataset (3 Classes)** (ISLRN [229-533-271-984-0](http://islrn.org/resources/229-533-271-984-0/))
@@ -84,5 +84,5 @@ If you wish to use these datasets in your paper or project, please cite:
 ## License
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-If you wish to use these datasets in a commercial product, please contact me at: bv115045p / at / student.etf.bg.ac.rs
+If you wish to use these datasets in a commercial product, please contact me at: vuk.batanovic / at / student.etf.bg.ac.rs
 
