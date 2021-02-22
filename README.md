@@ -84,5 +84,5 @@ If you wish to use these datasets in your paper or project, please cite:
 ## License
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-If you wish to use these datasets in a commercial product, please contact me at: vuk.batanovic / at / student.etf.bg.ac.rs
+If you wish to use these datasets in a commercial product, please contact me at: vuk.batanovic / at / ic.etf.bg.ac.rs
 
